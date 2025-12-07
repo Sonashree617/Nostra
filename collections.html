@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="menulist">
+
+        <div onclick="x()" id="x">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="menulist__list" style="margin-top: 10px;margin-left: 50px;list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#newarrival">New Arrival</a></li>
+            <li><a href="#mostwanted">Most Wanted</a></li>
+            <li><a href="collections.html">Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <nav class="navbar">
+
+            <h1 style="color: #1D232C;;">Nostra</h1>
+
+            <ul class="navbar__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#newarrival">New Arrival</a></li>
+                <li><a href="#mostwanted">Most Wanted</a></li>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div onclick="menu()" class="menu">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </nav>
+
+
+        <div class="container">
+
+            <div class="container__sec1">
+
+                <div class="filter-section">
+                    <div class="filter-section-Occasion">
+                        <h1>Occasion</h1>
+                        <input onclick="productshow1(event)" type="checkbox" name="products" value="Summer">
+                        <label>Summer</label><br>
+                        <input onclick="productshow2(event)" type="checkbox" name="products" value="Party">
+                        <label>Party</label><br>
+                        <input onclick="productshow1(event)" type="checkbox" name="products" value="Beach">
+                        <label>Value</label><br>
+                    </div>
+
+                    <div class="filter-section-Colors">
+                        <h1>Colors</h1>
+                        <input onclick="productshow2(event)" type="checkbox" name="products" value="Red">
+                        <label>Red</label><br>
+                        <input onclick="productshow1(event)" type="checkbox" name="products" value="Blue">
+                        <label>Blue</label><br>
+                        <input onclick="productshow2(event)" type="checkbox" name="products" value="Green">
+                        <label>Green</label><br>
+                        <input onclick="productshow1(event)" type="checkbox" name="products" value="White">
+                        <label>White</label><br>
+                    </div>
+
+                    <div class="filter-section-Arrivals">
+                        <h1>Arrivals</h1>
+                        <input onclick="latest(event)" type="checkbox" name="products" value="New">
+                        <label>New</label><br>
+                        <input type="checkbox" name="products" value="OLd">
+                        <label>Old</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conatiner__sec2">
+
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="search">
+
+                    <div class="search__icons">
+                        <i class="fa-solid fa-xmark" onclick="searchX()"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+
+                <div class="container__sec2-products">
+
+                    <div class="products-list">
+                        <div class="product-container">
+                            <img src="./images/f1.jpg">
+                            <h2>Floral Shirt</h2>
+                            <p>₹399</p>
+                        </div>
+                        <div class="product-container">
+                            <img src="./images/f7.jpg">
+                            <h2>Cotton Pant</h2>
+                            <p>₹399</p>
+                        </div>
+                        <div class="product-container">
+                            <img src="./images/c6.jpg">
+                            <h2>Party Shirt</h2>
+                            <p>₹799</p>
+                        </div>
+                    </div>
+
+
+                    <div class="products-list">
+
+                        <div class="product-container">
+                            <img src="./images/c3.jpg">
+                            <h2>Partyred Shirt</h2>
+                            <p>₹599</p>
+                        </div>
+
+
+                        <div class="product-container">
+                            <img src="./images/mw1.jpg">
+                            <h2>Plain Shirt</h2>
+                            <p>₹499</p>
+                        </div>
+
+                        <div class="product-container">
+                            <img src="./images/mw5.jpg">
+                            <h2>Formal shirt</h2>
+                            <p>₹699</p>
+                        </div>
+                    </div>
+
+                    <div class="products-list">
+                        <div class="product-container">
+                            <img src="./images/mw3.jpg">
+                            <h2>Plain Shirt</h2>
+                            <p>₹499</p>
+                        </div>
+                        <div class="product-container">
+                            <img src="./images/na4.jpg">
+                            <h2>Formal Shirt</h2>
+                            <p>₹399</p>
+                        </div>
+                        <div class="product-container">
+                            <img src="./images/c2.jpg">
+                            <h2>Beach Shirt</h2>
+                            <p>₹599</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+
+            <h1>Subscribe to our News Letter</h1>
+            <p> Be the first to shop new styles — subscribe now</p>
+            <input>
+            <button>Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h1>Nostra</h1>
+        <p>Nostra — introduced in 2024, crafted to bring modern fashion to everyone</p>
+
+        <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <p>&copy; 2025 Nostra.com</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

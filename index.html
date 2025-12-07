@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="offer-bar">
+        <p>Sign up and <b>Get 50% off</b> on your first order</p>
+        <div onclick="xmark()" id="xmark">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <div class="menulist">
+
+        <div onclick="x()" id="x">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="menulist__list" style="margin-top: 10px;margin-left: 50px;list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#newarrival">New Arrival</a></li>
+            <li><a href="#mostwanted">Most Wanted</a></li>
+            <li><a href="collections.html">Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <nav class="navbar">
+
+            <h1 style="color: #1D232C;;">Nostra</h1>
+
+            <ul class="navbar__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#newarrival">New Arrival</a></li>
+                <li><a href="#mostwanted">Most Wanted</a></li>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div onclick="menu()" class="menu">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </nav>
+
+        <div class="slider">
+
+            <div class="slider__images">
+                <img src="./images/slider-one.jpg" class="slider__image">
+                <img src="./images/slider-one.jpg" class="slider__image hidden" style="filter: brightness(40%);">
+                <img src="./images/slider-one.jpg" class="slider__image hidden" style="filter: brightness(40%);">
+            </div>
+
+            <i class="fa-solid fa-angle-left" onclick="pre()" id="arrowleft"></i>
+            <i class="fa-solid fa-angle-right" onclick="next()" id="arrowright"></i>
+
+            <div class="slider__content">
+                <h1>Level up your style with our</h1>
+                <h4>Summer Collections</h4>
+                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="brands">
+            <h1>Brands</h1>
+
+            <div class="brands__list">
+
+                <div class="brands__list-img">
+                    <img src="./images/leaves.png">
+                    <p>Leaves</p>
+                </div>
+
+                <div class="brands__list-img">
+                    <img src="./images/behance.png">
+                    <p>Behance</p>
+                </div>
+
+                <div class="brands__list-img">
+                    <img src="./images/adidas.png">
+                    <p>Adidas</p>
+                </div>
+
+                <div class="brands__list-img">
+                    <img src="./images/simple.png">
+                    <p>Simple</p>
+                </div>
+
+                <div class="brands__list-img">
+                    <img src="./images/behance.png">
+                    <p>Behance</p>
+                </div>
+
+                <div class="brands__list-img">
+                    <img src="./images/leaves.png">
+                    <p>Leaves</p>
+                </div>
+
+                <div class="brands__list-img">
+                    <img src="./images/simple.png">
+                    <p>Simple</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="service">
+
+            <div class="service__container1">
+                <h1>We Provide Best <br> Customer Experiences</h1>
+            </div>
+
+            <div class="service__container2">
+
+                <div class="service__container2-box">
+                    <i class="fa-regular fa-circle-check icon"></i>
+                    <h4 style="margin-top: 10px;">Simple & Trust-Focused</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+                <div class="service__container2-box">
+                    <i class="fa-regular fa-face-smile icon"></i>
+                    <h4 style="margin-top: 10px;">Friendly & Reassuring</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+                <div class="service__container2-box">
+                    <i class="fa-solid fa-paintbrush icon"></i>
+                    <h4 style="margin-top: 10px;">New Arrival Everyday</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+                <div class="service__container2-box">
+                    <i class="fa-solid fa-truck icon"></i>
+                    <h4 style="margin-top: 10px;">Free Shipping</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="newarrival">
+
+            <h1>New Arrivals</h1>
+
+            <div class="newarrival__sec1">
+                <div class="newarrival__sec1-container">
+                    <img src="./images/c1.jpg">
+                    <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="newarrival__sec1-container">
+                    <img src="./images/c2.jpg">
+                    <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="newarrival__sec1-container">
+                    <img src="./images/c3.jpg">
+                    <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="newarrival__sec1-container">
+                    <img src="./images/c8.jpg">
+                    <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mostwanted">
+
+            <h1>Most Wanted</h1>
+
+            <div class="mostwanted__sec1">
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/c4.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/n3.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/n8.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/c6.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/n7.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/c7.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/n3.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+
+                <div class="mostwanted__sec1-container">
+                    <img src="./images/c8.jpg">
+                    <button class="sale">Sale</button>
+                    <i class="fa-solid fa-heart heart-icon" onclick="heart(event)"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="offer__sec1">
+                <img src="./images/offer.jpg">
+            </div>
+            <div class="offer__sec2">
+                <h1>Limited offer</h1>
+                <h2>50% OFF on this for the first 30 Customers</h2>
+                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="news">
+
+            <h1>Subscribe to our News Letter</h1>
+            <p>Be the first to shop new styles — subscribe now</p>
+            <input>
+            <button>Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h1>Nostra</h1>
+        <p>Nostra — introduced in 2024, crafted to bring modern fashion to everyone </p>
+
+        <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <p>&copy; 2025 Nostra.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

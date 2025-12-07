@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div class="menulist">
+
+        <div onclick="x()" id="x">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="menulist__list" style="margin-top: 10px;margin-left: 50px;list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#newarrival">New Arrival</a></li>
+            <li><a href="#mostwanted">Most Wanted</a></li>
+            <li><a href="collections.html">Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <nav class="navbar">
+
+            <h1 style="color: #1D232C;;">Nostra</h1>
+
+            <ul class="navbar__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#newarrival">New Arrival</a></li>
+                <li><a href="#mostwanted">Most Wanted</a></li>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div onclick="menu()" class="menu">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </nav>
+
+
+        <div class="contactform">
+
+            <h2 style="margin-bottom: 20px;">Contact Us</h2>
+
+            <label>Name:</label><br>
+            <input type="text"><br>
+
+            <label>Email:</label><br>
+            <input type="text"><br>
+
+            <label>Message:</label><br>
+            <textarea></textarea>
+
+            <button class="submit">Submit</button>
+
+        </div>
+
+
+
+        <div class="news">
+
+            <h1>Subscribe to our News Letter</h1>
+            <p>Be the first to shop new styles — subscribe now</p>
+            <input>
+            <button>Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h1>Nostra</h1>
+        <p> Nostra — introduced in 2024, crafted to bring modern fashion to everyone </p>
+
+        <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <p>@ 2025 Nostra.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
