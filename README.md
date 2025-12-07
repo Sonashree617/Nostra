@@ -69,5 +69,3 @@ Search bar clear button
 ├── style.css
 ├── script.js
 └── images/
-
-Wishlist heart functionality
